@@ -6250,6 +6250,167 @@ blockquote.pullquote.right {
 .read-mode #article-container .note .note-icon {
   color: var(--font-color);
 }
+/* 设置全局字体大小 */
+body {
+    font-size: 16px;
+}
+
+#aside-content .card-info #card-info-btn {
+    border-radius: 5px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+/* 标签页码美化 */
+#page .tag-cloud-list {
+    margin: 5em 0 3em;
+}
+
+#page .tag-cloud-list a {
+    display: inline-flex;
+    color: var(--icat-fontcolor) !important;
+    font-size: 1.2em !important;
+    padding: 0.2em 0.5em;
+    background: var(--icat-card-bg);
+    margin: 0.5em 0.5em;
+    border-radius: 12px;
+    /* -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d; */
+    border: var(--style-border-always);
+    box-shadow: var(--icat-shadow-border);
+    align-items: center;
+}
+
+#page .tag-cloud-list a:before {
+    color: var(--icat-fontcolor) !important;
+    cursor: pointer;
+    content: "\e038" !important;
+    font-family: "iconfont" !important;
+    opacity: 0.4;
+    padding-top: 2px;
+    padding-right: 2px;
+}
+
+#page .tag-cloud-list a:hover {
+    background: var(--icat-blue);
+}
+
+#page .tag-cloud-list a>sup {
+    top: auto;
+    background: var(--icat-secondbg);
+    padding: 4px 4px;
+    margin-left: 8px;
+    border-radius: 6px;
+    color: var(--icat-secondtext);
+    line-height: 1;
+    text-align: center;
+    min-width: 35px;
+    display: inline-block;
+    font-size: 1rem;
+    box-shadow: var(--icat-shadow-border);
+}
+
+/* 标签页样式 */
+
+
+/* 重新定义宽度 */
+.layout {
+    width: 100%;
+    max-width: 1250px;
+}
+
+/* 定义是否侧边栏的宽度 */
+.layout>div:first-child {
+    width: 100%;
+}
+
+#post {
+    width: 78%;
+}
+
+.aside-content {
+    max-width: 312px;
+    min-width: 300px;
+}
+
+.layout.hide-aside {
+    max-width: 1400px;
+}
+
+/* 主页文章列表图片宽度 */
+#recent-posts>.recent-post-item {
+    height: 19em;
+    border: var(--style-border);
+}
+
+#recent-posts>.recent-post-item>.recent-post-info {
+    padding: 0 56px;
+    width: 64%;
+}
+
+@media screen and (max-width: 768px) {
+    #recent-posts>.recent-post-item {
+        height: auto;
+    }
+
+    #recent-posts>.recent-post-item>.recent-post-info {
+        padding: 20px 20px 30px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* 翻页按钮居中 */
+#pagination {
+    width: 100%;
+    margin: auto;
+}
+
+/* =================== */
+/* footer 页脚相关美化 */
+/* =================== */
+
+#footer-wrap {
+    padding: 1rem;
+    display: flex;
+    color: #363636;
+    background: #f7f7f9;
+}
+
+#footer-wrap a {
+    color: #363636;
+}
+
+.footer-warp-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 1;
+}
+
+#footer-wrap-left {
+    align-items: center;
+    display: flex;
+}
+
+#footer-wrap-right {
+    align-items: center;
+    display: flex;
+}
+
+.footer-link {
+    margin: 0 4px;
+    padding: 8px;
+    font-weight: var(--font-weight);
+}
+
+:root {
+    --font-weight: 700;
+}
 .search-dialog {
   position: fixed;
   top: 10%;

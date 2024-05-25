@@ -114,7 +114,52 @@ body {
     margin: auto;
 }
 
-/* 
-#site-subtitle {
-    color: var(--light-grey);
+/* =================== */
+/* footer 页脚相关美化 */
+/* =================== */
+
+#footer-wrap {
+    padding: 1rem;
+    display: flex;
+    color: #363636;
+    background: #f7f7f9;
+}
+
+#footer-wrap a {
+    color: #363636;
+}
+
+.footer-warp-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 1;
+}
+
+#footer-wrap-left {
+    align-items: center;
+    display: flex;
+}
+
+#footer-wrap-right {
+    align-items: center;
+    display: flex;
+}
+
+.footer-link {
+    margin: 0 4px;
+    padding: 8px;
+    font-weight: var(--font-weight);
+}
+
+/* .footer-link:hover {
+    text-decoration: none;
 } */
+
+:root {
+    --font-weight: 700;
+}
